@@ -61,6 +61,7 @@ pip install gradio pandas plotly ollama pydantic
 ```bash
 # From project root
 pytest tests/
+```
 
 2. Run specific test files:
 ```bash
@@ -77,18 +78,21 @@ pytest tests/test_plotter.py
 ## Usage
 
 1. Start the application:
-        - run the Gradio first:
-            - either download app or run on other terminal:
-            - using commands: ```gradio serve```
-        - then:
-            use command :```python src/main.py```
+   - Run the Gradio first:
+     ```bash
+     gradio serve
+     ```
+   - Then start the main application:
+     ```bash
+     python src/main.py
+     ```
 
 2. Access the interface at `http://127.0.0.1:7860`
 
 3. Upload a CSV file and:
-     - Ask questions about your data
-     - Create visualizations
-     - Preview the dataset
+   - Ask questions about your data
+   - Create visualizations
+   - Preview the dataset
 
 
 
