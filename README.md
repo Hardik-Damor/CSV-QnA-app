@@ -53,16 +53,35 @@ conda activate gradio_env
 ```bash
 pip install gradio pandas plotly ollama pydantic
 ```
+## Testing
+
+### Running Tests
+
+1. Run all tests:
+```bash
+# From project root
+pytest tests/
+
+2. Run specific test files:
+```bash
+# Test CSV handler
+pytest tests/test_csv_handler.py
+
+# Test LLM agent
+pytest tests/test_llm_agent.py
+
+# Test plotter
+pytest tests/test_plotter.py
+```
 
 ## Usage
 
 1. Start the application:
-    -run the Gradio first:
-        either download app or run on other terminal:
-        using commands: ```gradio serve```
-    -then
-        ```python src/main.py```
-
+        - run the Gradio first:
+            - either download app or run on other terminal:
+            - using commands: ```gradio serve```
+        - then:
+            use command :```python src/main.py```
 
 2. Access the interface at `http://127.0.0.1:7860`
 
@@ -71,9 +90,5 @@ pip install gradio pandas plotly ollama pydantic
      - Create visualizations
      - Preview the dataset
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
 
