@@ -1,6 +1,6 @@
 # CSV Question-Answering System
 
-A powerful interactive application that allows users to analyze CSV data through natural language questions and data visualization.
+An intelligent CSV data analysis system powered by LLM technology that allows users to analyze CSV data through natural language questions and data visualization.
 
 ## Features
 
@@ -57,9 +57,12 @@ pip install gradio pandas plotly ollama pydantic
 ## Usage
 
 1. Start the application:
-```bash
-python src/main.py
-```
+    -run the Gradio first:
+        either download app or run on other terminal:
+        using commands: ```gradio serve```
+    -then
+        ```python src/main.py```
+
 
 2. Access the interface at `http://127.0.0.1:7860`
 
@@ -68,4 +71,9 @@ python src/main.py
      - Create visualizations
      - Preview the dataset
 
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
 
